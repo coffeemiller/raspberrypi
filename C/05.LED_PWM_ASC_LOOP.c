@@ -11,10 +11,10 @@ int main (void) {
     unsigned int value = 0;         // value 초기값 입력
     softPwmCreate(LED, 0, 1023);    // softPwmCreate(WPi 번호, 초기 값, pwm 범위)
 
-    while (true) {
+    while (1) {
         for (value = 0; value < 1024 ; value++) {
             softPwmWrite(LED, value);   // softPwmWrite(WPi 번호, pwm 값)
-            delay(5)                    // 5ms 대기
+            delay(5);                   // 5ms 대기
         }
     }
 }

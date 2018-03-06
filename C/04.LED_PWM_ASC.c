@@ -13,6 +13,6 @@ int main (void) {
 
     for (value = 0; value < 1024 ; value++) {
         softPwmWrite(LED, value);   // softPwmWrite(WPi 번호, pwm 값)
-        delay(5)                    // 5ms 대기
+        delay(5);                   // 5ms 대기
     }
 }
