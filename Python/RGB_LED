@@ -1,0 +1,71 @@
+import RPi.GPIO as GPIO   # GPIO 제어 모듈
+import time               # time 모듈
+import random
+
+R = 17                    # wPi. 0(GPIO. 0), BCM. 17, Physical-Pin. 11(LED 4)
+G = 18                    # wPi. 1(GPIO. 1), BCM. 18, Physical-Pin. 12(LED 2)
+B = 27                    # wPi. 2(GPIO. 2), BCM. 27, Physical-Pin. 13(LED 1)
+                          # 가장 긴 핀(LED 3)은 Phical-Pin. 1(3.3v)로 연결
+
+GPIO.setmode(GPIO.BCM)    # BCM모드 설정
+GPIO.setup(R, GPIO.OUT)   # OUTPUT(출력) 설정
+GPIO.setup(G, GPIO.OUT)   # OUTPUT(출력) 설정
+GPIO.setup(B, GPIO.OUT)   # OUTPUT(출력) 설정
+
+# 초당 60Hz면 깜빡거림이 보이지 않음(기호(?)에 따라 더 늘려도 괜찮음)
+pwm_R = GPIO.PWM(R, 120)
+pwm_G = GPIO.PWM(G, 120)
+pwm_B = GPIO.PWM(B, 120)
+
+pwm_R.start(0)
+pwm_G.start(0)
+pwm_B.start(0)
+
+def LedColorSet(r, g, b) :
+    pwm_R.ChangeDutyCycle(r / 2.55)
+    pwm_G.ChangeDutyCycle(g / 2.55)
+    pwm_B.ChangeDutyCycle(b / 2.55)
+
+R_freq = 0
+G_freq = 100
+B_freq = 200
+
+R_val = 1
+G_val = 1
+B_val = 1
+
+try :                                   # 정상 작동일 때
+    while True :                        # 무한루프
+        R_freq += R_val
+        if R_freq >= 256 :
+            R_freq = 255
+            R_val = -1
+        elif R_freq <= -1 :
+            R_freq = 0
+            R_val = 1
+
+        G_freq += G_val
+        if G_freq >= 256 :
+            G_freq = 255
+            G_val = -1
+        elif G_freq <= -1 :
+            G_freq = 0
+            G_val = 1
+
+        B_freq += B_val
+        if B_freq >= 256 :
+            B_freq = 255
+            B_val = -1
+        elif B_freq <= -1 :
+            B_freq = 0
+            B_val = 1
+
+        LedColorSet(R_freq, G_freq, B_freq)
+        time.sleep(0.05)
+
+except :            # 종료 시
+    pwm_R.stop()    # pwm 종료
+    pwm_G.stop()    # pwm 종료
+    pwm_B.stop()    # pwm 종료
+    GPIO.cleanup()  # GPIO 초기화
+    print("end")    # "end" 메시지 출력
