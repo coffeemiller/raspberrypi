@@ -70,12 +70,12 @@ try :   # 정상 작동일 때
         for i in range(0, len(freq)) :
             for j in range(0, len(freq[i])) :
                 freq[i][j][0] += freq[i][j][1]
-                if freq[i][j][0] >= 256 :
+                if freq[i][j][0] >= 256 :   # 255(최대값)을 넘었을 경우
                     freq[i][j][0] = 255
-                    freq[i][j][1] = -1
-                elif freq[i][j][0] <= -1 :
+                    freq[i][j][1] = -1      # 증가 값을 감소로 돌림
+                elif freq[i][j][0] <= -1 :  # 0(최소값)을 넘었을 경우
                     freq[i][j][0] = 0
-                    freq[i][j][1] = 1
+                    freq[i][j][1] = 1       # 감소 값을 증가 값으로 돌림
 
         # 미리 선언한 함수를 이용하여 LED의 색 정의
         LedColorSet1(freq[0][0][0], freq[0][1][0], freq[0][2][0])
