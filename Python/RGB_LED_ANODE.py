@@ -12,6 +12,7 @@ B2 = 24                    # wPi. 5(GPIO. 5), BCM. 24, Physical-Pin. 18(LED 1)
 R3 = 5                     # wPi. 21(GPIO. 21), BCM. 5, Physical-Pin. 29(LED 4)
 G3 = 6                     # wPi. 22(GPIO. 22), BCM. 6, Physical-Pin. 31(LED 2)
 B3 = 13                    # wPi. 23(GPIO. 23), BCM. 13, Physical-Pin. 33(LED 1)
+# 가장 긴 핀(LED 3)은 GND에 연결
 
 GPIO.setmode(GPIO.BCM)     # BCM모드 설정
 
