@@ -5,13 +5,13 @@ R1 = 17                    # wPi. 0(GPIO. 0), BCM. 17, Physical-Pin. 11(LED 4)
 G1 = 18                    # wPi. 1(GPIO. 1), BCM. 18, Physical-Pin. 12(LED 2)
 B1 = 27                    # wPi. 2(GPIO. 2), BCM. 27, Physical-Pin. 13(LED 1)
 
-R2 = 22                    # wPi. 0(GPIO. 0), BCM. 17, Physical-Pin. 11(LED 4)
-G2 = 23                    # wPi. 1(GPIO. 1), BCM. 18, Physical-Pin. 12(LED 2)
-B2 = 24                    # wPi. 2(GPIO. 2), BCM. 27, Physical-Pin. 13(LED 1)
+R2 = 22                    # wPi. 3(GPIO. 3), BCM. 22, Physical-Pin. 15(LED 4)
+G2 = 23                    # wPi. 4(GPIO. 4), BCM. 23, Physical-Pin. 16(LED 2)
+B2 = 24                    # wPi. 5(GPIO. 5), BCM. 24, Physical-Pin. 18(LED 1)
 
-R3 = 5                     # wPi. 0(GPIO. 0), BCM. 17, Physical-Pin. 11(LED 4)
-G3 = 6                     # wPi. 1(GPIO. 1), BCM. 18, Physical-Pin. 12(LED 2)
-B3 = 13                    # wPi. 2(GPIO. 2), BCM. 27, Physical-Pin. 13(LED 1)
+R3 = 5                     # wPi. 21(GPIO. 21), BCM. 5, Physical-Pin. 29(LED 4)
+G3 = 6                     # wPi. 22(GPIO. 22), BCM. 6, Physical-Pin. 31(LED 2)
+B3 = 13                    # wPi. 23(GPIO. 23), BCM. 13, Physical-Pin. 33(LED 1)
 
 GPIO.setmode(GPIO.BCM)     # BCM모드 설정
 
