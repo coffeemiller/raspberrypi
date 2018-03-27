@@ -19,22 +19,35 @@ def SetColor(strip, num, color, milli_sec) :    # 먼저 선언해야 색이 나
 strip = neopixel.Adafruit_NeoPixel(LED_COUNT, LED_PIN, 800000, 10, False, LED_BRIGHTNESS, LED_CHANNEL, 1050624)
 strip.begin()
 
+def R_G_B() :
+    for i in range(neopixel.numPixels()) :
+        if i % 3 == 1 :
+            for j in range(256) :
+                SetColor(strip, i, neopixel.Color(j, 0, 255 - j), 1)    # Blue ~ Red
+            for j in range(256) :
+                SetColor(strip, i, neopixel.Color(255 - j, j, 0), 1)    # Red ~ Green
+            for j in range(256) :
+                SetColor(strip, i, neopixel.Color(0, 255 - j, j), 1)    # Green ~ Blue
+        if i % 3 == 2 :
+            for j in range(256) :
+                SetColor(strip, i, neopixel.Color(255 - j, j, 0), 1)    # Red ~ Green
+            for j in range(256) :
+                SetColor(strip, i, neopixel.Color(0, 255 - j, j), 1)    # Green ~ Blue
+            for j in range(256) :
+                SetColor(strip, i, neopixel.Color(j, 0, 255 - j), 1)    # Blue ~ Red
+        if i % 3 == 0 :
+            for j in range(256) :
+                SetColor(strip, i, neopixel.Color(0, 255 - j, j), 1)    # Green ~ Blue
+            for j in range(256) :
+                SetColor(strip, i, neopixel.Color(j, 0, 255 - j), 1)    # Blue ~ Red
+            for j in range(256) :
+                SetColor(strip, i, neopixel.Color(255 - j, j, 0), 1)    # Red ~ Green
+
 try :
     print("Ctrl-C 를 눌러 종료합니다.")
 
     while True :
-        for i in range(256) :
-            SetColor(strip, 0, neopixel.Color(i, 0, 255 - i), 1)    # Blue ~ Red
-            SetColor(strip, 1, neopixel.Color(255 - i, i, 0), 1)    # Red ~ Green
-            SetColor(strip, 2, neopixel.Color(0, 255 - i, i), 1)    # Green ~ Blue
-        for i in range(256) :
-            SetColor(strip, 0, neopixel.Color(255 - i, i, 0), 1)    # Red ~ Green
-            SetColor(strip, 1, neopixel.Color(0, 255 - i, i), 1)    # Green ~ Blue
-            SetColor(strip, 2, neopixel.Color(i, 0, 255 - i), 1)    # Blue ~ Red
-        for i in range(256) :
-            SetColor(strip, 0, neopixel.Color(0, 255 - i, i), 1)    # Green ~ Blue
-            SetColor(strip, 1, neopixel.Color(i, 0, 255 - i), 1)    # Blue ~ Red
-            SetColor(strip, 2, neopixel.Color(255 - i, i, 0), 1)    # Red ~ Green
+        R_G_B()
             
 
 except :    # Press Ctrl-C
