@@ -20,7 +20,7 @@ strip = neopixel.Adafruit_NeoPixel(LED_COUNT, LED_PIN, 800000, 10, False, LED_BR
 strip.begin()
 
 def R_G_B() :
-    for i in range(strip.numPixels()) :
+    for i in range(LED_COUNT) :
         if i % 3 == 1 :
             for j in range(256) :
                 SetColor(strip, i, neopixel.Color(j, 0, 255 - j), 1)    # Blue ~ Red
@@ -53,7 +53,7 @@ try :
 except :    # Press Ctrl-C
     print("\nCtrl-C를 누르셨습니다. 종료됩니다.")
 
-    for i in range(strip.numPixels()) :
+    for i in range(LED_COUNT) :
         SetColor(strip, i, neopixel.Color(0, 0, 0), 1)  # Black(off)
 
     sys.exit(0)
