@@ -20,7 +20,7 @@ strip = neopixel.Adafruit_NeoPixel(LED_COUNT, LED_PIN, 800000, 10, False, LED_BR
 strip.begin()
 
 def R_G_B() :
-    for i in range(neopixel.numPixels()) :
+    for i in range(strip.numPixels()) :
         if i % 3 == 1 :
             for j in range(256) :
                 SetColor(strip, i, neopixel.Color(j, 0, 255 - j), 1)    # Blue ~ Red
