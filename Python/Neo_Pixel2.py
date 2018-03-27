@@ -1,6 +1,6 @@
-# LED1 : DATA IN (GPIO 연결, 혹은 이전 LED의 DATA OUT으로부터 연결.)
-# LED2 : 5V+ (저항 + 콘덴서)
-# LED3 : GND(가장 긴 것) (콘덴서)
+# LED1 : DATA IN (저항 + GPIO 연결, 혹은 이전 LED의 DATA OUT으로부터 연결.)
+# LED2 : 5V+
+# LED3 : GND(가장 긴 것)
 # LED4 : DATA OUT (다음 LED의 DATA IN으로 연결)
 
 import neopixel, time, sys
