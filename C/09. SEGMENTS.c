@@ -27,14 +27,14 @@ int main(void){
     if(wiringPiSetup() == -1){return 1;}
 
     // 반복문을 이용하여 OUTPUT 설정
-    for (int i = 0 ; i < 7 ; i++) {
+    for (char i = 0 ; i < 7 ; i++) {
         pinMode(SEGMENTS[i], OUTPUT);
     }
 
     while(1) {
         // 0~9까지 0.5초씩 번갈아가며 출력
-        for (int i = 0 ; i < 10 ; i++) {
-            for (int j = 0 ; j < 7 ; j++) {
+        for (char i = 0 ; i < 10 ; i++) {
+            for (char j = 0 ; j < 7 ; j++) {
                 digitalWrite(SEGMENTS[j], NUMBER[i][j]);
             }
             delay(500);
