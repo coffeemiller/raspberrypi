@@ -10,7 +10,7 @@
 #define G 23    // GPIO. 23 (Physical. 33)
 
 unsigned char SEGMENTS[7] = {A, B, C, D, E, F, G};
-unsigned int NUMBER[10][7] = {
+unsigned char NUMBER[10][7] = {
     {0, 0, 0, 0, 0, 0, 1},  // 0
     {1, 0, 0, 1, 1, 1, 1},  // 1
     {0, 0, 1, 0, 0, 1, 0},  // 2
