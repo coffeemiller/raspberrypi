@@ -2,7 +2,9 @@
 
 import Adafruit_GPIO.SPI as SPI
 import Adafruit_MCP3008
-import time
+import time, sys
+
+CHANNEL = 0
 
 # MCP3008 - 1 : 5V
 # MCP3008 - 2 : 5V
@@ -15,22 +17,28 @@ CE0 = 8     # MCP3008 - 7
 mcp = Adafruit_MCP3008.MCP3008(clk=SCLK, cs=CE0, miso=MISO, mosi=MOSI)
 
 if __name__ == "__main__" :
-    while(True) :
-        #시간 설정
-        now = time.localtime()
-        timestamp = ("%04d-%02d-%02d %02d:%02d:%02d" % 
-        (now.tm_year, now.tm_mon, now.tm_mday, 
-        now.tm_hour, now.tm_min, now.tm_sec))
+    try :
+        while(True) :
+            #시간 설정
+            now = time.localtime()
+            timestamp = ("%04d-%02d-%02d %02d:%02d:%02d" % 
+            (now.tm_year, now.tm_mon, now.tm_mday, 
+            now.tm_hour, now.tm_min, now.tm_sec))
 
-        values = [0]*8
-        for i in range(8) :
-            values[i] = mcp.read_adc(i)
+            values = [0]*8
+            for i in range(8) :
+                values[i] = mcp.read_adc(i)
 
-        if values[0] > 800 :
-            print("%s %d (안전)" % (timestamp, values[0]))
-        elif values[0] > 500 :
-            print("%s %d (주의)" % (timestamp, values[0]))
-        else :
-            print("%s %d (화재 경보)" % (timestamp, values[0]))
-        
-        time.sleep(1)
+            if values[CHANNEL] > 800 :
+                print("%s %d (안전)" % (timestamp, values[CHANNEL]))
+            elif values[CHANNEL] > 500 :
+                print("%s %d (주의)" % (timestamp, values[CHANNEL]))
+            else :
+                print("%s %d (화재 경보)" % (timestamp, values[CHANNEL]))
+            
+            time.sleep(1)
+    except :
+        print("\nPress Ctrl - C")
+    finally :
+        print("END")
+        sys.exit(1)
