@@ -9,10 +9,10 @@ CHANNEL = 0
 # MCP3008 - 1 : 5V
 # MCP3008 - 2 : 5V
 # MCP3008 - 3 : GND
-SCLK = 11   # MCP3008 - 4
-MISO = 9    # MCP3008 - 5
-MOSI = 10   # MCP3008 - 6
-CE0 = 8     # MCP3008 - 7
+SCLK = 11   # Physical. 23   # MCP3008 - 4
+MISO = 9    # Physical. 21   # MCP3008 - 5
+MOSI = 10   # Physical. 19   # MCP3008 - 6
+CE0 = 8     # Physical. 24   # MCP3008 - 7
 # MCP3008 - 8 : GND
 mcp = Adafruit_MCP3008.MCP3008(clk=SCLK, cs=CE0, miso=MISO, mosi=MOSI)
 
