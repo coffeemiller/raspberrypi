@@ -18,7 +18,9 @@ if __name__ == "__main__" :
     while(True) :
         #시간 설정
         now = time.localtime()
-        timestamp = "%04d-%02d-%02d %02d:%02d:%02d" % (now.tm_year, now.tm_mon, now.tm_mday, now.tm_hour, now.tm_min, now.tm_sec)
+        timestamp = ("%04d-%02d-%02d %02d:%02d:%02d" % 
+        (now.tm_year, now.tm_mon, now.tm_mday, 
+        now.tm_hour, now.tm_min, now.tm_sec))
 
         values = [0]*8
         for i in range(8) :

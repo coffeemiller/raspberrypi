@@ -10,7 +10,9 @@ if __name__ == "__main__" :
     try :
         while(1) :
             now = time.localtime()
-            timestamp = "%04d-%02d-%02d %02d:%02d:%02d" % (now.tm_year, now.tm_mon, now.tm_mday, now.tm_hour, now.tm_min, now.tm_sec)
+            timestamp = ("%04d-%02d-%02d %02d:%02d:%02d" % 
+            (now.tm_year, now.tm_mon, now.tm_mday, 
+            now.tm_hour, now.tm_min, now.tm_sec))
             if GPIO.input(FLAME) == 1 : # 평소 1을 전송함
                 print(timestamp, "안전")
             else :                      # 불꽃 감지시 0을 전송함
