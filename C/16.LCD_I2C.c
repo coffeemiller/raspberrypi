@@ -1,5 +1,7 @@
 #include "LCD_I2C.h"
 
+// GND
+// VCC  5v
 // SDA  Physical. 3, wPi. 8, BCM. 2
 // SCL  Physical. 5, wPi. 9, BCM. 3
 
