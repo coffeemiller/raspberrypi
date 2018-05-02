@@ -22,12 +22,24 @@
   * [RGB_LED_CATHODE.py](https://github.com/juunini/raspberrypi/blob/master/Python/RGB_LED_CATHODE.py)
   * [Neo_Pixel.py](https://github.com/juunini/raspberrypi/blob/master/Python/Neo_Pixel.py)
   
+* 알고리즘
+  * [01.LED.png](https://github.com/juunini/raspberrypi/blob/master/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80/01.LED.png)
+  * [02.SWITCH_LED.png](https://github.com/juunini/raspberrypi/blob/master/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80/02.SWITCH_LED.png)
+  * [03.LED_PWM.png](https://github.com/juunini/raspberrypi/blob/master/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80/03.LED_PWM.png)
+  * [04.LED_PWM_ASC.png](https://github.com/juunini/raspberrypi/blob/master/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80/04.LED_PWM_ASC.png)
+  * [05.LED_PWM_ASC_LOOP.png](https://github.com/juunini/raspberrypi/blob/master/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80/05.LED_PWM_ASC_LOOP.png)
+  * [06.RGB_LED.png](https://github.com/juunini/raspberrypi/blob/master/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80/06.RGB_LED.png)
+  * [07.7LED.png](https://github.com/juunini/raspberrypi/blob/master/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80/07.7LED.png)
+  
 ## 2. Speaker 모듈
 * C
   * [08. SPEAKER.c](https://github.com/juunini/raspberrypi/blob/master/C/08.%20SPEAKER.c)
 
 * Python3
   * [08. SPEAKER.py](https://github.com/juunini/raspberrypi/blob/master/Python/08.%20SPEAKER.py)
+  
+* 알고리즘
+ * [08.SPEAKER.png](https://github.com/juunini/raspberrypi/blob/master/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80/08.SPEAKER.png)
 
 ## 3. 적외선 센서
 * C
@@ -38,12 +50,19 @@
   * [10.INFRARED_LED.py](https://github.com/juunini/raspberrypi/blob/master/Python/10.INFRARED_LED.py)
   * [10.INFRARED_LED_BUZZER.py](https://github.com/juunini/raspberrypi/blob/master/Python/10.INFRARED_LED_BUZZER.py)
   
+* 알고리즘
+  * [10.INFRARED_LED.png](https://github.com/juunini/raspberrypi/blob/master/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80/10.INFRARED_LED.png)
+  * [11.INFRARED_LED_BUZZER.png](https://github.com/juunini/raspberrypi/blob/master/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80/11.INFRARED_LED_BUZZER.png)
+  
 ## 4. 7Segments
 * C
   * [09. SEGMENTS.c](https://github.com/juunini/raspberrypi/blob/master/C/09.%20SEGMENTS.c)
  
 * Python3
   * [09. SEGMENTS.py](https://github.com/juunini/raspberrypi/blob/master/Python/09.%20SEGMENTS.py)
+  
+* 알고리즘
+  * [09.7SEGMENT.png](https://github.com/juunini/raspberrypi/blob/master/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80/09.7SEGMENT.png)
   
 ## 5. 팬 모터 모듈
 * C
@@ -56,12 +75,19 @@
   * [13.FAN_MOTOR_MODULE.py](https://github.com/juunini/raspberrypi/blob/master/Python/13.FAN_MOTOR_MODULE.py)
   * [13.FAN_MOTOR_MAIN.py](https://github.com/juunini/raspberrypi/blob/master/Python/13.FAN_MOTOR_MAIN.py)
   
+* 알고리즘
+  * [12.FAN_MOTOR.png](https://github.com/juunini/raspberrypi/blob/master/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80/12.FAN_MOTOR.png)
+  * [13.FAN_MOTOR_PWM.png](https://github.com/juunini/raspberrypi/blob/master/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80/13.FAN_MOTOR_PWM.png)
+  
 ## 6. 서보모터 모듈
 * C
   * [11.SERVO.c](https://github.com/juunini/raspberrypi/blob/master/C/11.SERVO.c)
   
 * Python3
   * [14.SERVO.py](https://github.com/juunini/raspberrypi/blob/master/Python/14.SERVO.py)
+  
+* 알고리즘
+  * [14.SERVO.png](https://github.com/juunini/raspberrypi/blob/master/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80/14.SERVO.png)
   
 ## 7. 불꽃 감지 센서
 * C
