@@ -24,15 +24,15 @@
   
 ## 2. Speaker 모듈
 * C
-  * [08. SPEAKER.c](https://github.com/juunini/raspberrypi/blob/master/C/08. SPEAKER.c)
+  * [08. SPEAKER.c](https://github.com/juunini/raspberrypi/blob/master/C/08.%20SPEAKER.c)
 
 * Python3
-  * [08. SPEAKER.py](https://github.com/juunini/raspberrypi/blob/master/Python/08. SPEAKER.py)
+  * [08. SPEAKER.py](https://github.com/juunini/raspberrypi/blob/master/Python/08.%20SPEAKER.py)
 
 ## 3. 적외선 센서
 * C
-  * [09. INFRARED_LED.c](https://github.com/juunini/raspberrypi/blob/master/C/09. INFRARED_LED.c)
-  * [09. INFRARED_LED_BUZZER.c](https://github.com/juunini/raspberrypi/blob/master/C/09. INFRARED_LED_BUZZER.c)
+  * [09. INFRARED_LED.c](https://github.com/juunini/raspberrypi/blob/master/C/09.%20INFRARED_LED.c)
+  * [09. INFRARED_LED_BUZZER.c](https://github.com/juunini/raspberrypi/blob/master/C/09.%20INFRARED_LED_BUZZER.c)
 
 * Python3
   * [10.INFRARED_LED.py](https://github.com/juunini/raspberrypi/blob/master/Python/10.INFRARED_LED.py)
@@ -40,10 +40,10 @@
   
 ## 4. 7Segments
 * C
-  * [09. SEGMENTS.c](https://github.com/juunini/raspberrypi/blob/master/C/09. SEGMENTS.c)
+  * [09. SEGMENTS.c](https://github.com/juunini/raspberrypi/blob/master/C/09.%20SEGMENTS.c)
  
 * Python3
-  * [09. SEGMENTS.py](https://github.com/juunini/raspberrypi/blob/master/Python/09. SEGMENTS.py)
+  * [09. SEGMENTS.py](https://github.com/juunini/raspberrypi/blob/master/Python/09.%20SEGMENTS.py)
   
 ## 5. 팬 모터 모듈
 * C
