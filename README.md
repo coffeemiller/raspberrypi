@@ -134,3 +134,9 @@
   * [23.LCD.py](https://github.com/juunini/raspberrypi/blob/master/Python/23.LCD.py)
   * [24.LCD_I2C_MODULE.py](https://github.com/juunini/raspberrypi/blob/master/Python/24.LCD_I2C_MODULE.py)
   * [24.LCD_I2C.py](https://github.com/juunini/raspberrypi/blob/master/Python/24.LCD_I2C.py)
+
+------------------------------------------
+
+## DB 연동하기
+* [Python3 데이터 입력](https://github.com/juunini/rasp/blob/master/testDB/test.py)
+* [Python3 데이터 조회](https://github.com/juunini/rasp/blob/master/testDB/viewTest.py)
